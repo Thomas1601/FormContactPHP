@@ -1,0 +1,175 @@
+/* version 3.0 table added */
+.phpTom-container {
+	-webkit-font-smoothing: antialiased;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: .9em;
+	color: #1e2a28;
+	width: 740px;
+	margin: 0 auto;
+	padding: 0px 20px 20px 20px;
+}
+
+.phpTom-container table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.phpTom-container td, .phpTom-container th {
+	text-align: left;
+	padding: 8px;
+}
+
+.phpTom-container h1 {
+	font-weight: normal;
+}
+
+input[type=text].phpTom-input, .phpTom-container input,
+	.phpTom-container textarea, .phpTom-container select, .phpTom-input,
+	.phpTom-select {
+	box-sizing: border-box;
+	width: 200px;
+	height: initial;
+	padding: 8px 5px;
+	border: 1px solid #9a9a9a;
+	border-radius: 3px;
+}
+
+.phpTom-container input[type="checkbox"] {
+	width: auto;
+	vertical-align: text-bottom;
+	display: initial;
+	opacity: initial;
+	position: inherit;
+	pointer-events: initial;
+}
+
+.phpTom-container textarea, .phpTom-textarea {
+	width: 300px;
+}
+
+.phpTom-container select, .phpTom-select {
+	display: initial;
+	height: 30px;
+	background-color: #fff;
+	padding: 2px 5px;
+}
+
+.phpTom-container button, .phpTom-container input[type=submit] {
+	padding: 8px 0px;
+	font-size: 1em;
+	cursor: pointer;
+	border-radius: 3px;
+	color: #565656;
+	font-weight: bold;
+	background-color: #ffc72c;
+	border-color: #ffd98e #ffbe3d #de9300;
+}
+
+.phpTom-container button, .phpTom-container input[type=submit]:hover {
+	background-color: #f7c027;
+}
+
+.phpTom-container button:focus {
+	outline: none;
+}
+
+.phpTom-container .phpTom-row {
+	padding-top: 15px;
+}
+
+#phpTom-message {
+	padding: 6px 20px;
+	font-size: 1em;
+	color: rgb(40, 40, 40);
+	box-sizing: border-box;
+	margin: 0px;
+	border-radius: 3px;
+	width: 100%;
+	overflow: auto;
+}
+
+.phpTom-container .error {
+	padding: 6px 20px;
+	border-radius: 3px;
+	background-color: #fb817c;
+	border: 1px solid #e46b66;
+}
+
+.phpTom-container .success {
+	background-color: #48e0a4;
+	border: #40cc94 1px solid;
+}
+
+#phpTom-loader-icon {
+	color: #1871e6;
+	font-weight: bold;
+	padding: 6px 20px 6px 0;
+	display: none;
+	vertical-align: middle;
+}
+
+#phpTom-loader-ack-icon {
+	color: #1871e6;
+	font-weight: bold;
+	padding: 6px 20px 6px 0;
+	display: none;
+	vertical-align: middle;
+}
+
+#phpTom-btn-send:hover {
+	background: #1363cc;
+	border: #105bbd 1px solid;
+}
+
+.phpTom-container .validation-message {
+	color: #e20900;
+	display: inline-block;
+}
+
+.phpTom-container .label {
+	margin-bottom: 3px;
+}
+
+.phpTom-form, .phppot-section {
+	border: #eaeaea 1px solid;
+	padding: 10px 25px 10px 30px;
+	border-radius: 3px;
+}
+
+.phpTom-container .display-none {
+	display: none;
+}
+
+.icon-add-more-attachemnt {
+	cursor: pointer;
+	font-style: italic;
+	font-size: .9em;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+@media all and (max-width: 780px) {
+	.phpTom-container {
+		width: auto;
+	}
+}
+
+@media all and (max-width: 400px) {
+	.phpTom-container {
+		padding: 0px 20px;
+	}
+	.phpTom-container h1 {
+		font-size: 1.2em;
+	}
+	.phpTom-container input, .phpTom-container textarea, .phpTom-container select
+		{
+		width: 100%;
+	}
+	.phpTom-form {
+		border: none;
+		padding: 0;
+	}
+}
