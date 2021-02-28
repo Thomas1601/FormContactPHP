@@ -2,8 +2,8 @@
 namespace PhpTom;
 
 /**
- * Generic datasource class for handling DB operations.
- * Uses MySqli and PreparedStatements.
+ * Classe de source de données générique pour la gestion des opérations DB.
+ * Utilise MySqli et PreparedStatements.
  *
  * @version 2.6 - recordCount function added
  */
@@ -15,22 +15,20 @@ class DataSource{
     private $conn;
 
     /**
-     * PHP implicitly takes care of cleanup for default connection types.
-     * So no need to worry about closing the connection.
+     * PHP s'occupe implicitement du nettoyage des types de connexion par défaut.
+     * Donc pas besoin de s'inquiéter de la fermeture de la connexion.
      *
-     * Singletons not required in PHP as there is no
-     * concept of shared memory.
-     * Every object lives only for a request.
-     *
-     * Keeping things simple and that works!
+     * Singletons non requis en PHP car il n'y en a pas
+     * concept de mémoire partagée.
+     * Chaque objet ne vit que pour une demande.
      */
     function __construct(){
         $this->conn = $this->getConnection();
     }
 
     /**
-     * If connection object is needed use this method and get access to it.
-     * Otherwise, use the below methods for insert / update / etc.
+     *
+     *
      *
      * @return \mysqli
      */
@@ -46,7 +44,7 @@ class DataSource{
     }
 
     /**
-     * To get database results
+     * obtenir les résultats de la base de données
      *
      * @param string $query
      * @param string $paramType
@@ -75,7 +73,7 @@ class DataSource{
     }
 
     /**
-     * To insert
+     * Insertion
      *
      * @param string $query
      * @param string $paramType
@@ -92,7 +90,7 @@ class DataSource{
     }
 
     /**
-     * To execute query
+     * Execution query
      *
      * @param string $query
      * @param string $paramType
@@ -108,9 +106,8 @@ class DataSource{
     }
 
     /**
-     * 1.
-     * Prepares parameter binding
-     * 2. Bind prameters to the sql statement
+     * 1. Prépare la liaison de paramètres (bind parameters)
+     * 2. Liez les préamètres à l'instruction sql (sql statement)
      *
      * @param string $stmt
      * @param string $paramType
@@ -128,7 +125,7 @@ class DataSource{
     }
 
     /**
-     * To get database results
+     * obtenir les résultats de la base de données
      *
      * @param string $query
      * @param string $paramType
